@@ -1,0 +1,60 @@
+.add-user {
+    width: auto;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #096ff5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.add-user h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f3f4f4;
+    font-size: large;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 15px;
+}
+
+.field label {
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
+.field input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 0px solid #fbfcfd;
+    outline: none;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.field input:focus {
+    border-color: #edf0f5;
+    box-shadow: 0 0 4px #e6e9ec;
+}
+
+.submit-btn {
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 8px;
+    border: none;
+    background-color: #f2f3f5;
+    color: rgb(12, 21, 45);
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #b2b7c1;
+}
