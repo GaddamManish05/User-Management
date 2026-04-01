@@ -17,7 +17,7 @@ setLoading(true)
 
 try{
 
-let res = await fetch("http://localhost:3000/user-api/users")
+let res = await fetch(`${import.meta.env.VITE_API_URL}/user-api/users`)
 
 let data = await res.json()
 
@@ -59,13 +59,13 @@ return <p className="text-center text-red-500 mt-20">{error}</p>
 
 return (
 
-<div className="max-w-3xl mx-auto mt-10">
+<div className="max-w-3xl mx-auto mt-10 w-7/10">
 
 <h1 className="text-3xl font-semibold text-center mb-6">
 List of Users
 </h1>
 
-<div className="space-y-4">
+<div className="space-y-4 gap-5">
 
 {
 users.map((userObj)=>(
