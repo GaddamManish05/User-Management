@@ -9,8 +9,8 @@ config()
 // create a express app
 const app = exp();
 app.use(cors({
-    origin : "http://localhost:5173"
-}))
+  origin: "https://user-management-ppni.vercel.app"
+}));
 // create body parsing middleware
 app.use(exp.json());
 // create a path to user-api
@@ -19,7 +19,8 @@ app.use('/user-api',userApp);
 const connectDb = async() => {
     try{
         // import from .env file 
-        await connect(process.env.DB_URL);
+        const PORT = process.env.PORT || 5000;
+        await connect(PORT);
         console.log('Db Connection Done');
         // create a http server 
         app.listen(process.env.PORT,() => {
