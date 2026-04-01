@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: user-management-backend
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node server.js

@@ -9,7 +9,7 @@ config()
 // create a express app
 const app = exp();
 app.use(cors({
-    origin : "http://localhost:5174"
+    origin : "http://localhost:5173"
 }))
 // create body parsing middleware
 app.use(exp.json());
